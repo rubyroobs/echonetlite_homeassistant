@@ -185,6 +185,14 @@ ENL_OP_CODES = {
             0xE7: {CONF_UNIT_OF_MEASUREMENT: "L"},
             0xEE: {CONF_UNIT_OF_MEASUREMENT: "L"},
         },
+        0x7B: {
+            0xE1: {
+                CONF_ICON: "mdi:thermometer",
+                CONF_TYPE: SensorDeviceClass.TEMPERATURE,
+                CONF_STATE_CLASS: SensorStateClass.MEASUREMENT,
+                CONF_SERVICE: [SERVICE_SET_INT_1B],
+            },
+        },
         0x79: {
             0xE0: {
                 CONF_ICON: "mdi:solar-power-variant-outline",
